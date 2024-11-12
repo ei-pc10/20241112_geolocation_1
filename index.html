@@ -16,7 +16,7 @@
         <a-entity id="modelEntity" 
                   gltf-model="https://raw.githubusercontent.com/ei-pc10/hitomania_3d/main/model.glb" 
                   position="-5 0 -5" 
-                  scale="0.7 0.7 0.7"
+                  scale="0.4 0.4 0.4"
                   look-at="[camera]"
                   animation-mixer>
         </a-entity>
@@ -32,9 +32,9 @@
         // Androidの場合、モデルのスケールを直接変更
         const modelEntity = document.getElementById('modelEntity');
         if (isAndroid) {
-            modelEntity.object3D.scale.set(0.6 0.6 0.6);  // Android用のスケールを直接変更
+            modelEntity.object3D.scale.set(0.3 0.3 0.3);  // Android用のスケールを直接変更
         } else {
-            modelEntity.object3D.scale.set(0.7 0.7 0.7);  // iOS用のスケールを直接変更
+            modelEntity.object3D.scale.set(0.4 0.4 0.4);  // iOS用のスケールを直接変更
         }
 
         // ユーザーの位置情報を取得
