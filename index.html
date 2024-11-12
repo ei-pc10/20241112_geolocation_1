@@ -15,8 +15,8 @@
         <!-- GPSエンティティを設定、look-at-cameraコンポーネントを追加 -->
         <a-entity id="modelEntity" 
                   gltf-model="https://raw.githubusercontent.com/ei-pc10/hitomania_3d/main/model.glb" 
-                  position="-5 0 -5" 
-                  scale="0.3 0.3 0.3"
+                  position="0 0 -5" 
+                  scale="1 1 1"
                   look-at="[camera]"
                   animation-mixer>
         </a-entity>
@@ -32,9 +32,9 @@
         // Androidの場合、モデルのスケールを直接変更
         const modelEntity = document.getElementById('modelEntity');
         if (isAndroid) {
-            modelEntity.object3D.scale.set(0.5, 0.5, 0.5);  // Android用のスケールを直接変更
+            modelEntity.object3D.scale.set(0.7, 0.7, 0.7);  // Android用のスケールを直接変更
         } else {
-            modelEntity.object3D.scale.set(0.3, 0.3, 0.3);  // iOS用のスケールを直接変更
+            modelEntity.object3D.scale.set(1 1 1);  // iOS用のスケールを直接変更
         }
 
         // ユーザーの位置情報を取得
