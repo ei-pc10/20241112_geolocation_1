@@ -15,8 +15,8 @@
         <!-- 3Dモデルのエンティティ（初期状態では非表示） -->
         <a-entity id="modelEntity" 
                   gltf-model="https://raw.githubusercontent.com/ei-pc10/hitomania_3d/main/model.glb" 
-                  position="-5 0 -5" 
-                  scale="0.4 0.4 0.4"
+                  position="-5 -5 -5" 
+                  scale="0.6 0.6 0.6"
                   look-at="[camera]"
                   visible="false"
                   animation-mixer>
@@ -34,7 +34,7 @@
         
         // Android判定
         const isAndroid = /Android/i.test(navigator.userAgent);
-        const scale = isAndroid ? 0.3 : 0.4;  // Androidの場合はスケールを0.3に設定
+        const scale = isAndroid ? 0.5 : 0.6;  // Androidの場合はスケールを0.5に設定
 
         // スケールを適用
         modelEntity.object3D.scale.set(scale, scale, scale);
